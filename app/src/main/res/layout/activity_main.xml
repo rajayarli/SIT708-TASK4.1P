@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" ><![CDATA[
+    tools:context=".MainActivity">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <TextView
+        android:id="@+id/tv_time_remaining"
+        android:layout_width="395dp"
+        android:layout_height="126dp"
+        android:layout_above="@+id/et_workout_duration"
+        android:layout_below="@+id/pb_progress"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="68dp"
+        android:text="Time Left: 00:00"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/et_workout_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_rest_duration"
+        android:layout_marginBottom="34dp"
+        android:hint="Continue doing Workout for (seconds)" />
+
+    <EditText
+        android:id="@+id/et_rest_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_start"
+        android:layout_marginBottom="41dp"
+        android:hint="Rest Duration (seconds)" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="377dp"
+        android:layout_height="68dp"
+        android:layout_above="@+id/btn_stop"
+        android:layout_marginBottom="45dp"
+        android:text="Lets Begin" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="395dp"
+        android:layout_height="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="127dp"
+        android:text="Break" />
+
+    <ProgressBar
+        android:id="@+id/pb_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:max="100" />
+
+</RelativeLayout>
